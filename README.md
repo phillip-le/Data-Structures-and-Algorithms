@@ -14,13 +14,13 @@ Memory Complexity: O(log n) because the tree has a height of O(log n) and in the
 * return -1, 0, +1 if tree1 is less than, equal to, or greater than tree2, respectively.
 
 ### LinkedMultiHashSet
-LinkedMultiHashSet is an implementation of a (see MultiSet), using a hashtable as the internal data structure, and with predictable iteration order based on the insertion order of elements. The iteration order is maintained like a doubly linked list, with each entry having pointers to the next and previous entry in the iteration order.
+LinkedMultiHashSet is an implementation of a multiset (see MultiSet), using a hashtable as the internal data structure, with predictable iteration order based on the insertion order of elements. The iteration order is maintained like a doubly linked list, with each entry having pointers to the next and previous entry in the iteration order.
 
 Its iterator orders elements according to when the first occurrence of the element was added. When the multiset contains multiple instances of an element, those instances are consecutive in the iteration order. If all occurrences of an element are removed, after which that element is added to the multiset, the element will appear at the end of the iteration.
 
 The internal hashtable array is doubled in size after an add that would cause it to be at full capacity. The internal capacity never decreases.
 
-Collision handling for elements with the same hashcode (i.e.with hashCode()) is done using linear probing.
+Collision handling for elements with the same hashcode (i.e. with hashCode()) is done using linear probing.
 ### QuaternaryHeapsort
 Sorts the input array, in-place, using a quaternary heap sort.
 
@@ -29,7 +29,7 @@ Time Complexity: O(n log n) because performing the downheap requires O(log n) ti
 Memory Complexity: O(1) because downheap has O(1) memory complexity and removeMax modifies the input array in-place so extra memory does not need to be allocated.
 
 ### StrongHeap
-Determines whether the binary tree with the given root node is a "strong binary heap", as described in the assignment task sheet.
+Determines whether the binary tree with the given root node is a "strong binary heap".
 * A strong binary heap is a binary tree which is:
     - a complete binary tree, AND
     - its values satisfy the strong heap property.
