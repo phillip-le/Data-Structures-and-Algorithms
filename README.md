@@ -41,3 +41,9 @@ Memory Complexity: O(n) because the number of nodes that need to be added to the
 * param root root of a binary tree, cannot be null.
 
 * return true if the tree is a strong heap, otherwise false.
+### SortingAlgorithms
+A list of classical sorting algorithms including Quicksort, Merge Sort, Insertion Sort and Selection Sort. Each sorting algorithm accepts a boolean which specifies whether the output is in ascending or descending order. 
+
+Quicksort is implemented recursively and in-place and has an expected Time Complexity of O(n log n).
+
+Merge Sort is implemented recursively and in-place and has an expected Time Complexity of O(n log n).
